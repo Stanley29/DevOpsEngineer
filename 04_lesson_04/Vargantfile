@@ -1,0 +1,40 @@
+Vagrant.configure("2") do |config|
+   servers=[ 
+   {
+     :hostname => "Serverl",
+	 :box => "hento/ubuntu-18.04",
+	 :ip => "172.16.1.50",
+	 :ssh_porl => '2200',
+   },
+   {
+     :hostname => "Server2",
+	 :box => "hento/ubuntu-18.04",
+	 :ip => "172.16.1.51",
+	 :ssh_porl => '2201',
+   },
+   {
+     :hostname => "Server3",
+	 :box => "hento/ubuntu-18.04",
+	 :ip => "172.16.1.52",
+	 :ssh_porl => '2202',
+   }
+   ]
+   
+servers.each do |machine|
+  config.vm.define machine[:hostname] do |node|
+          node.vm.box = machine[:box]
+		  node.vm.hostname = machine[:hostname]
+		  node.vm.network :private_nelwork, ip: machine[: ip]
+		  node.vm.network "forwarded port", guest: 22, host: machine[:ssh_port], id: "ssh"
+		  node.vm.synced_folder "../date, "/home/vagrant/data"
+		  node.vm.provision "file",
+		  source: "../copiedfile.txt", destination: "/home/vagrant/copiedfile.txt"
+		  
+		  node.vm.provider :virtualbox do |vb|
+		    vb.customize ["modify", :id, "--memory", 1024]
+		    vb.customize ["modify", :id, "--cpus", 2]
+		  end
+	end
+end
+end	
+		  
