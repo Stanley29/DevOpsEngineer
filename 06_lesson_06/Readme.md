@@ -287,4 +287,4 @@
 		  
    ```
    
-   
+    ![sudo fail2ban-client status sshd](images/05_Fail2Ban/lesson6_Fail2Ban_status.jpg)
