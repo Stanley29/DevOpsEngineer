@@ -68,6 +68,8 @@
 		   
     ```
 	
+	![all tables](images/01_lesson_13_all_tables_01.jpg)
+	
 	1.5. Вставка даних:
 	
 	```
@@ -97,6 +99,12 @@
     ('Robert', 'Brown', 3, 1300.00);
 		   
     ```
+	
+	![all info](images/02_lesson_13_all_children_02.jpg)
+	
+	![all info](images/03_lesson_13_all_parents_03.jpg)
+	
+	![all info](images/04_lesson_13_all_institutions_04.jpg)
 	
 	1.6. Запити:
 	
