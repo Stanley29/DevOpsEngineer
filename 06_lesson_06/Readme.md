@@ -10,6 +10,11 @@
 		
    ```
 
+
+    ![sudo apt update](images/01_install_nginx_server/lesson_06_install_nginx_server_01.jpg) 
+	
+	![sudo apt update](images/01_install_nginx_server/lesson_06_install_nginx_server_02.jpg)
+	
    1.2 Встановити Nginx:
    
    ```
@@ -18,7 +23,12 @@
 		
    ```
    
+    ![sudo apt install nginx](images/01_install_nginx_server/lesson_06_install_nginx_server_04.jpg) 
+	
+	![sudo apt install nginx](images/01_install_nginx_server/lesson_06_install_nginx_server_05.jpg)
+	
        Підтвердити встановлення, натиснувши Y.
+	   
    1.3 Запустити Nginx:
    
    ```
@@ -27,7 +37,8 @@
 		
    ```
    
-
+    ![sudo systemctl start nginx](images/01_install_nginx_server/lesson_06_install_nginx_server_06.jpg)
+	
    1.4 Переконатися, що Nginx запускається при завантаженні системи:
    
    ```
@@ -53,6 +64,9 @@
 	```
 
    1.7 Перевірити, чи працює Nginx: Відкрити веб-браузер і перейти за адресою http://your_server_ip. Ви повинні побачити сторінку за замовчуванням Nginx.
+   
+   ![http](images/01_install_nginx_server/lesson_06_install_nginx_server_07.jpg)
+   
    1.8 Налаштувати конфігурації: Файл конфігурації Nginx знаходиться за адресою /etc/nginx/nginx.conf. Внести необхідні зміни та перевірити конфігурацію:
    
    ```
@@ -175,6 +189,8 @@
 		   
 		```
 
+    ![sudo systemctl status](images/03_systemd-service/lesson_06_systemd-service_09.jpg)
+	
 4. Налаштовано брандмауер за допомогою UFW . 
    Для виконання цього кроку завдання треба зробити наступні дії.
    Налаштував UFW і заборонив доступ до порту 22 (SSH) з певного IP, але дозволив з іншого IP:
@@ -210,6 +226,8 @@
            sudo ufw status
 		   
     ```
+	
+	![sudo ufw status](images/04_UFW/lesson_06_UFW_04.jpg)
 		   
 5. Налаштовано Fail2Ban для захисту від підбору паролів через SSH.
    Для виконання цього кроку завдання треба зробити наступні дії.
@@ -269,4 +287,4 @@
 		  
    ```
    
-   
+    ![sudo fail2ban-client status sshd](images/05_Fail2Ban/lesson6_Fail2Ban_status.jpg)
