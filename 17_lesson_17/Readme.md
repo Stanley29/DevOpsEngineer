@@ -28,7 +28,7 @@ docker-compose up -d
 
 ```
 
-![docker_compose_up](images/03_1_docker_compose_up_1.jpg)
+![docker_compose_up](images/03_2_docker_compose_up_1.jpg)
 ![docker_containers](images/03_1_docker_containers.jpg)
 
  3.2. Перевірте стан запущених сервісів:
