@@ -28,8 +28,8 @@ docker-compose up -d
 
 ```
 
-![docker_compose_up](images/03_1_docker_compose_up1.jpg)
-![docker_containers](images03_1_docker_containers.jpg)
+![docker_compose_up](images/03_1_docker_compose_up_1.jpg)
+![docker_containers](images/03_1_docker_containers.jpg)
 
  3.2. Перевірте стан запущених сервісів:
   * Застосовуйте команду docker-compose ps для перегляду стану запущених контейнерів
@@ -39,14 +39,14 @@ docker-compose up -d
 docker-compose ps
 
 ```
-![docker_compose_ps](03_docker_compose_ps.jpg)
+![docker_compose_ps](images/03_docker_compose_ps.jpg)
 
 Дивіться на малюнку вище.
 
  3.3. Перевірте роботу вебсервера:
   * Відкрийте браузер та перейдіть за адресою http://localhost:8080. Ви повинні побачити сторінку nginx.
 
- ![docker_ngix_page](03_3_docker_ngix_page.jpg)
+ ![docker_ngix_page](images/03_3_docker_ngix_page.jpg)
 
 
 4. Завдання 4: Налаштування мережі й томів
@@ -59,7 +59,7 @@ docker-compose ps
 docker network ls
 
 ```
-![docker network ls](04_1_docker_network_ls.jpg)
+![docker network ls](images/04_1_docker_network_ls.jpg)
 
 
 
@@ -68,7 +68,7 @@ docker network ls
 docker volume ls
 
 ```
-![docker_volume_ls](04_1_docker_volume_ls.jpg)
+![docker_volume_ls](images/04_1_docker_volume_ls.jpg)
 
 
 4.2. Перевірте підключення до бази даних:
@@ -82,9 +82,9 @@ docker exec -it multi-container-app-db-1 psql -U exampleuser -d exampledb
 
 
 
-![docker_exec](04_2_docker_exec.jpg)
+![docker_exec](images/04_2_docker_exec.jpg)
 
-![docker_exec](04_2_1_docker_exec.jpg)
+![docker_exec](images/04_2_1_docker_exec.jpg)
 
 
 
@@ -99,7 +99,7 @@ docker-compose up -d --scale web=3
 
 ```
 
-![docker_scale](05_1_docker_scale.jpg)
+![docker_scale](images/05_1_docker_scale.jpg)
 
 
 5.2. Перевірте стан масштабованих сервісів:
@@ -110,7 +110,7 @@ docker-compose up -d --scale web=3
 docker-compose ps
 
 ```
-Дивіться малюнок вище
+Дивіться малюнок вище. Також, нижче показаний десктоп з контейнерами.
 
-![docker_scale](05_2_docker_scale.jpg)
+![docker_scale](images/05_2_docker_scale.jpg)
 
