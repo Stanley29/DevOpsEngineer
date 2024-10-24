@@ -1,0 +1,32 @@
+services:
+  web:
+    image: nginx
+    volumes:
+      - web-data:/usr/share/nginx/html
+    ports:
+      - "8081:80"
+    networks:
+      - appnet
+
+  db:
+    image: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: exampledb
+      POSTGRES_USER: exampleuser
+      POSTGRES_PASSWORD: examplepass
+    networks:
+      - appnet
+
+  cache:
+    image: redis
+    networks:
+      - appnet
+
+volumes:
+  db-data:
+  web-data:
+
+networks:
+  appnet:
