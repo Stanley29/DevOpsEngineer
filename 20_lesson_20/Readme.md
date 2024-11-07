@@ -14,24 +14,24 @@ Report about home work for the K8.
 nano persistent-volume-claim.yaml
 
 ```
-    1.2 Create the YAML Configuration:
+   1.2 Create the YAML Configuration:
 
     The editor is open, and I created the content provided in the file "persistent-volume-claim.yaml".
     
-    1.3 Save and Exit the Editor:
+   1.3 Save and Exit the Editor:
 
-       In nano, press Ctrl+O to write the file, and Ctrl+X to exit.
+    In nano, press Ctrl+O to write the file, and Ctrl+X to exit.
     
 
-    1.4  Apply the PVC Configuration:
+   1.4  Apply the PVC Configuration:
 
-       I run the following command:
+    I run the following command:
 ```
 
 kubectl apply -f persistent-volume-claim.yaml
 
 ```
-     Screen output:
+    Screen output:
 
 ![kubectl](images/01_k8_home_work_kubectl.jpg)
 
@@ -39,7 +39,7 @@ kubectl apply -f persistent-volume-claim.yaml
 2. Створіть StatefulSet для Redis із налаштуваннями для запуску двох реплік. Кожна репліка повинна мати стабільне ім’я та доступ до постійного тому.
   2.1 Create the YAML File:
 
-       Open the editor:
+    Open the editor:
 ```
 
 nano redis-statefulset.yaml
@@ -47,44 +47,44 @@ nano redis-statefulset.yaml
 ```
   2.2 Add YAML Configuration:
 
-      I pasted the following StatefulSet configuration in the "redis-statefulset.yaml" file.
+    I pasted the following StatefulSet configuration in the "redis-statefulset.yaml" file.
 
   2.3 Save and Exit the Editor:
 
-      In nano, press Ctrl+O to write the file, and Ctrl+X to exit.
+    In nano, press Ctrl+O to write the file, and Ctrl+X to exit.
   2.4 Apply the StatefulSet Configuration:
 
-      I run the following command:
+    I run the following command:
 ```
 
 kubectl apply -f redis-statefulset.yaml
 
 ```
-      Screen output:
+    Screen output:
 ![statefulset](images/02_k8_home_work_statefulset.jpg)
 
 
 3. Створіть Service для Redis: Service для StatefulSet потрібен для доступу до Redis. Використовуйте тип Service ClusterIP для внутрішньої взаємодії між подами.
    3.1 Create the YAML File:
 
-       Open the editor:
+    Open the editor:
 ```
 
 nano redis-service.yaml
 
 ```
     
-    3.2 Create YAML Configuration:
+   3.2 Create YAML Configuration:
 
-       I pasted the following Service configuration in the "redis-service.yaml" file.
+    I pasted the following Service configuration in the "redis-service.yaml" file.
 
-    3.3 Save and Exit the Editor:
+   3.3 Save and Exit the Editor:
 
-        In nano, press Ctrl+O to write the file, and Ctrl+X to exit.
+    In nano, press Ctrl+O to write the file, and Ctrl+X to exit.
 
-    3.4 Apply the Service Configuration:
+   3.4 Apply the Service Configuration:
 
-        I run the following command:
+    I run the following command:
 ```
 
 kubectl apply -f redis-service.yaml
@@ -108,12 +108,12 @@ Screen output:
     
 ![service check](images/04_k8_home_work_service_check.jpg)
 
-    4.2 Check Pod Names:
+   4.2 Check Pod Names:
 
-         The pod names aree stable and look like redis-0 and redis-1.
-    4.3 Connect to Each Pod:
+    The pod names aree stable and look like redis-0 and redis-1.
+   4.3 Connect to Each Pod:
 
-     I run the following command:
+    I run the following command:
 ```
 
 kubectl exec -it redis-0 -- redis-cli
@@ -124,9 +124,9 @@ Screen output:
     
 - connected to the Redis CLI inside redis-0
 
-     Repeat for redis-1:
+   Repeat for redis-1:
     
-      I run the following command:
+    I run the following command:
 ```
 
 kubectl exec -it redis-1 -- redis-cli
@@ -156,6 +156,7 @@ Screen output:
   * Переконайтеся, що всі потрібні директорії змонтовані для коректної роботи Falco
 
 For the chapters 1-4 - the steps defined below.
+
     4.1 Create the YAML File: I open a text editor to create the Falco DaemonSet YAML file:
 
 ```
