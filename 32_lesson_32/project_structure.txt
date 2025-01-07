@@ -1,0 +1,23 @@
+my_ansible_project/
+├── ansible.cfg
+├── inventory/
+│   └── aws_ec2.yml
+├── roles/
+│   ├── baseline/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   ├── firewall/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   ├── nginx/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── templates/
+│   │   │   ├── nginx.conf.j2
+│   │   │   └── index.html.j2
+├── playbooks/
+│   ├── baseline.yml
+│   ├── firewall.yml
+│   ├── nginx.yml
+└── vault/
+    └── secrets.yml

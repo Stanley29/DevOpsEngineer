@@ -1,0 +1,6 @@
+plugin: aws_ec2
+regions:
+  - us-east-1
+boto_profile: default
+filters:
+  instance-state-name: running

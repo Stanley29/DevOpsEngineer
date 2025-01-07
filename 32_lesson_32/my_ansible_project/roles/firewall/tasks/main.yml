@@ -1,0 +1,9 @@
+---
+- name: Allow SSH
+  ansible.builtin.ufw:
+    rule: allow
+    name: OpenSSH
+
+- name: Enable UFW
+  ansible.builtin.ufw:
+    state: enabled
