@@ -1,0 +1,15 @@
+---
+- name: Setup SSH keys
+  ansible.builtin.authorized_key:
+    user: admin
+    state: present
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD3qGNy5 admin@gmail.com"
+
+- name: Install basic packages
+  ansible.builtin.package:
+    name:
+      - vim
+      - git
+      - mc
+      - ufw
+    state: present
