@@ -169,11 +169,11 @@ Step 4: Set Up Web Server or Database Server
         - Dashboards in Grafana provide visualizations for both metrics and logs.
 		
 		
-    ![04_Monitoring_Architecture](images/04_Monitoring_Architecture.jpg)
+![04_Monitoring_Architecture](images/04_Monitoring_Architecture.jpg)
 	
-	![05_Monitoring_Prometheus_targets](images/05_Monitoring_Prometheus_targets.jpg)
+![05_Monitoring_Prometheus_targets](images/05_Monitoring_Prometheus_targets.jpg)
 	
-	![11_Monitoring_ngix](images/11_Monitoring_ngix.jpg)
+![11_Monitoring_ngix](images/11_Monitoring_ngix.jpg)
 	
 Step 5: Configure Grafana
     1. Access Grafana:
