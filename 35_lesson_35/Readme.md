@@ -198,15 +198,20 @@ Step 5: Configure Grafana
 
        - Loki Logs Explorer
 	   
-	   ![06_Monitoring_Data_sources](images/06_Monitoring_Data_sources.jpg)
 	   
-	   ![07_Monitoring_Dashboards](images/07_Monitoring_Dashboards.jpg)
+![06_Monitoring_Data_sources](images/06_Monitoring_Data_sources.jpg)
+
 	   
-	   ![08_Monitoring_Node_Exporter_Dashboard](images/08_Monitoring_Node_Exporter_Dashboard.jpg)
+![07_Monitoring_Dashboards](images/07_Monitoring_Dashboards.jpg)
+
 	   
-	   ![09_Monitoring_Nginx_Dashboard](images/09_Monitoring_Nginx_Dashboard.jpg)
+![08_Monitoring_Node_Exporter_Dashboard](images/08_Monitoring_Node_Exporter_Dashboard.jpg)
+
 	   
-	   ![10_Monitoring_Loki_Dashboard](images/10_Monitoring_Loki_Dashboard.jpg)
+![09_Monitoring_Nginx_Dashboard](images/09_Monitoring_Nginx_Dashboard.jpg)
+
+	   
+![10_Monitoring_Loki_Dashboard](images/10_Monitoring_Loki_Dashboard.jpg)
 	
 
 
